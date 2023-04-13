@@ -1,0 +1,16 @@
+{% extends 'todo/layout.html' %}
+
+{% block content %}
+
+<h3>Ven amiguito, ven a divertirte</h3>
+{% if request.user.is_authenticated %}
+<h4>
+    {{user.username | upper }}, bienvenido
+</h4>
+
+<div>
+    <script src="https://cdn.htmlgames.com/embed.js?game=BigParking&amp;bgcolor=white"></script>
+</div>
+
+{% endif %}
+{% endblock %}
